@@ -1,14 +1,14 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 
-// import { Container } from './styles';
+import {Props} from './types';
 
-const Header: React.FC = () => {
+const Header = (props : Props) => {
   return (
     <View>
       <Image style={style.logo} source={require('./../../assets/light.jpg')} />
       <View style={style.Button}>
-        <Text style={style.Text}>BEGIN</Text>
+        <Text style={style.Text}>{props.name}</Text>
       </View>
     </View>
   );
