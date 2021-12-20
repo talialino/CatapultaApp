@@ -5,10 +5,11 @@ import {Props} from './types';
 
 const Header = (props : Props) => {
   return (
-    <View>
-      <Image style={style.logo} source={require('./../../assets/light.jpg')} />
+    <View style={style.Container}>
+      {/* <Image style={style.logo} source={require('./../../assets/light.jpg')} /> */}
+      <Text style={style.Title}>{props.title}</Text>
       <View style={style.Button}>
-        <Text style={style.Text}>{props.name}</Text>
+        <Text style={style.Name}>{props.name}</Text>
       </View>
     </View>
   );
@@ -17,17 +18,27 @@ const Header = (props : Props) => {
 export default Header;
 
 const style = StyleSheet.create({
+  Container: {
+    backgroundColor: '#ffff',
+    flex: 1,
+  },
   Button: {
     backgroundColor: '#086A87',
     alignSelf: 'center',
     justifyContent: 'center',
-    width: '50%',
-    height: '9%',
+    width: '60%',
+    height: '30%',
     borderRadius: 10,
-    position: 'absolute',
-    top: '60%',
+    top: '30%',
   },
-  Text: {
+  Title: {
+    textAlign: 'center',
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'black',
+    top: '25%'
+  },
+  Name: {
     textAlign: 'center',
     fontSize: 20,
     fontWeight: 'bold',
