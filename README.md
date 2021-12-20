@@ -1,11 +1,27 @@
+<h1 align='center'>📚 Studyng components </h1>
+<h2 align='center'>🔄 Life cycle </h2>
+
 <p align="center">
   <img
-       width=300px
-       src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
-       alt='rn'
+       width=700px
+       src="https://innovationcloud.com/pub/blog/15964476642261_innovation_cloud_-_product_life_cycle.png"
+       alt='Life cycle react-native'
   />
 </p>
+
+# Topics
+- Props
+- Hooks
+  - useEffect
+  - useMemo
+  - useCallback
+  - useRef
+
+# Example: Header component
   
+https://user-images.githubusercontent.com/69056026/146720077-33b8d08d-bf22-443f-80dd-77780cae830b.mp4
+
+
 <h1 align="center">
   APP CATAPULTA
   </>
